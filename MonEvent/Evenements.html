@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <!-- Encodage pour afficher correctement les caractères français. -->
+  <meta charset="utf-8">
+  <!-- Permet à la page de s'adapter aux écrans mobiles. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Découvrez les événements proposés par MonEvent.">
+  <title>Événements - MonEvent</title>
+  <!-- Utilise la même feuille de style que la page d'accueil. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="--site-background-image: url('image/fond.png')">
+  <!-- Fond propre à cette page : remplacez le chemin par image/nom-de-votre-image.png. -->
+  <!-- En-tête et navigation vers les autres pages du site. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#accueil" aria-label="MonEvent, accueil">
+        <img src="image/instagram.png" alt="Logo Instagram">
+        <span>MonEvent</span>
+      </a>
+      <nav class="navigation" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="Evenements.html" aria-current="page">Événements</a>
+        <a href="login.php">Connexion</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Titre et courte introduction de la page des événements. -->
+    <section class="event-page-heading container">
+      <p class="eyebrow">À découvrir</p>
+      <h1>Nos événements</h1>
+      <p>Retrouvez les événements MonEvent et choisissez ceux qui vous intéressent.</p>
+    </section>
+
+    <!-- Liste de neuf événements : personnalisez les titres, dates, lieux et descriptions. -->
+    <section class="section event-section" id="evenements" aria-label="Liste des événements">
+      <ol class="event-list container">
+        <!-- Chaque ligne présente un événement, ses infos pratiques et sa page détaillée. -->
+        <li class="event-item">
+          <div class="event-number" aria-hidden="true">01</div>
+          <div class="event-details">
+            <h2>Concert de jazz</h2>
+            <p>Profitez d'une soirée musicale avec des artistes de jazz.</p>
+            <p class="event-meta">Date : à préciser <span aria-hidden="true">·</span> Lieu : à préciser</p>
+            <!-- Encadré récapitulatif du tarif annoncé. -->
+            <aside class="info-card" aria-label="Tarif de l'événement">
+              <p class="info-card-label">Tarif</p>
+              <p><strong>30 €</strong></p>
+              <a class="button" href="evenement/Concert-de-jazz.html">En savoir plus</a>
+            </aside>
+            
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-number" aria-hidden="true">02</div>
+          <div class="event-details">
+            <!-- Fiche 02 : soirée Canin et cocktail. -->
+            <h2>Canin et cocktail</h2>
+            <p>Une soirée conviviale dédiée aux chiens et aux amateurs de cocktails.</p>
+            <p class="event-meta">Date : à préciser <span aria-hidden="true">·</span> Lieu : à préciser</p>
+            <aside class="info-card" aria-label="Tarif de l'événement">
+              <p class="info-card-label">Tarif d'entrée</p>
+              <p><strong>5 €</strong></p>
+              <a class="button" href="evenement/Canin-et-cocktail.html">En savoir plus</a>
+            </aside>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-number" aria-hidden="true">03</div>
+          <div class="event-details">
+            <!-- Fiche 03 : soirée cinéma Marvel. -->
+            <h2>Soirée cinéma Marvel</h2>
+            <p>Venez profiter d'une soirée de projections autour des super-héros Marvel.</p>
+            <p class="event-meta">Date : <time datetime="2026-10-23">23 octobre 2026</time> <span aria-hidden="true">·</span> Lieu : cinéma de Bordeaux</p>
+            <aside class="info-card" aria-label="Tarif de l'événement">
+              <p class="info-card-label">Tarif</p>
+              <p><strong>20 €</strong></p>
+              <a class="button" href="evenement/Cinéma.html">En savoir plus</a>
+            </aside>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-number" aria-hidden="true">04</div>
+          <div class="event-details">
+            <!-- Fiche 04 : marché des créateurs. -->
+            <h2>Marché des créateurs</h2>
+            <p>Découvrez les créations et le savoir-faire d'artisans locaux.</p>
+            <p class="event-meta">Date : à préciser <span aria-hidden="true">·</span> Lieu : à préciser</p>
+            <aside class="info-card" aria-label="Tarif de l'événement">
+              <p class="info-card-label">Tarif</p>
+              <p><strong>Gratuit</strong></p>
+              <a class="button" href="evenement/Marché-des-créateurs.html">En savoir plus</a>
+            </aside>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-number" aria-hidden="true">05</div>
+          <div class="event-details">
+            <!-- Fiche 05 : atelier cuisine. -->
+            <h2>Atelier cuisine</h2>
+            <p>Apprenez à préparer de nouvelles recettes dans une ambiance détendue.</p>
+            <p class="event-meta">Date : à préciser <span aria-hidden="true">·</span> Lieu : à préciser</p>
+            <aside class="info-card" aria-label="Tarif de l'événement">
+              <p class="info-card-label">Tarif</p>
+              <p><strong>20 €</strong></p>
+              <a class="button" href="evenement/Atelier-cuisine.html">En savoir plus</a>
+            </aside>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-number" aria-hidden="true">06</div>
+          <div class="event-details">
+            <!-- Fiche 06 : soirée jeux de société. -->
+            <h2>Soirée jeux de société</h2>
+            <p>Rencontrez d'autres joueurs et découvrez de nouveaux jeux.</p>
+            <p class="event-meta">Date : à préciser <span aria-hidden="true">·</span> Lieu : à préciser</p>
+            <aside class="info-card" aria-label="Tarif de l'événement">
+              <p class="info-card-label">Tarif</p>
+              <p><strong>10 €</strong></p>
+              <a class="button" href="evenement/Soirée-jeux-de-société.html">En savoir plus</a>
+            </aside>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-number" aria-hidden="true">07</div>
+          <div class="event-details">
+            <!-- Fiche 07 : balade nature. -->
+            <h2>Balade nature</h2>
+            <p>Partez à la découverte des paysages et sentiers de la région.</p>
+            <p class="event-meta">Date : à préciser <span aria-hidden="true">·</span> Lieu : à préciser</p>
+            <aside class="info-card" aria-label="Tarif de l'événement">
+              <p class="info-card-label">Tarif</p>
+              <p><strong>Gratuit</strong></p>
+              <a class="button" href="evenement/Balade-nature.html">En savoir plus</a>
+            </aside>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-number" aria-hidden="true">08</div>
+          <div class="event-details">
+            <!-- Fiche 08 : scène ouverte. -->
+            <h2>Scène ouverte</h2>
+            <p>Venez écouter des talents locaux ou monter sur scène à votre tour.</p>
+            <p class="event-meta">Date : à préciser <span aria-hidden="true">·</span> Lieu : à préciser</p>
+            <aside class="info-card" aria-label="Tarif de l'événement">
+              <p class="info-card-label">Tarif</p>
+              <p><strong>50 €</strong></p>
+              <a class="button" href="evenement/Scène-ouverte.html">En savoir plus</a>
+            </aside>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-number" aria-hidden="true">09</div>
+          <div class="event-details">
+            <!-- Fiche 09 : vide-grenier solidaire. -->
+            <h2>Vide-grenier solidaire</h2>
+            <p>Chinez des objets et soutenez une initiative locale.</p>
+            <p class="event-meta">Date : à préciser <span aria-hidden="true">·</span> Lieu : à préciser</p>
+            <aside class="info-card" aria-label="Tarif de l'événement">
+              <p class="info-card-label">Tarif</p>
+              <p><strong>Gratuit</strong></p>
+              <a class="button" href="evenement/Vide-grenier-solidaire.html">En savoir plus</a>
+            </aside>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- Pied de page avec l'année mise à jour automatiquement. -->
+  <!-- Pied de page commun au site. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="annee"></span> MonEvent</p>
+    </div>
+  </footer>
+
+  <script>
+    // Affiche l'année actuelle dans le pied de page.
+    document.getElementById("annee").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

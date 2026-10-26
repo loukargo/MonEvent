@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <!-- Encodage UTF-8 pour afficher correctement les accents et caractères français. -->
+  <meta charset="utf-8">
+  <!-- Adapte la largeur de la page à celle de l'écran, notamment sur mobile. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Remplacez le texte entre crochets par une description courte de votre site. -->
+  <meta name="description" content="[Une courte description de votre site]">
+  <!-- Texte affiché dans l'onglet du navigateur. -->
+  <title>MonEvent</title>
+  <!-- Charge les règles de présentation enregistrées dans le fichier CSS externe. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="--site-background-image: url('image/fond.png')">
+  <!-- Fond propre à cette page : remplacez le chemin par image/nom-de-votre-image.png. -->
+  <!-- En-tête : nom du site et liens vers les différentes sections de la page. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Le logo ramène au début de la page. -->
+      <a class="brand" href="#accueil" aria-label="MonEvent, accueil">
+        <img src="image/instagram.png" alt="Logo Instagram">
+        <span>MonEvent</span>
+      </a>
+      <!-- Les valeurs href (#...) correspondent aux identifiants des sections plus bas. -->
+      <nav class="navigation" aria-label="Navigation principale">
+        <a href="Evenements.html">Événements</a>
+        <a href="http://localhost/MonEvent/guardians.php">Connexion</a>
+        <a href="#Bientôt">Bientôt</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenu principal : accueil, événements à la une et contact. -->
+  <main>
+    <!-- Accueil : remplacez les textes entre crochets par votre accroche, titre et bouton. -->
+    <section class="hero container" id="accueil">
+      <p class="eyebrow">Trouvez vos événements préférés facilement</p>
+      <h1>MonEvent à votre service</h1>
+      <a class="button" href="Evenements.html">Nos événements</a>
+    </section>
+
+    <!-- Aperçu des trois événements mis en avant sur la page d'accueil. -->
+    <section class="section" id="Bientôt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Nos prochains Evenements</h2>
+          <p>Retrouvez nos événements à venir et ne manquez aucune surprise !</p>
+        </div>
+        <!-- Dupliquez ou supprimez un article si vous souhaitez modifier le nombre de rubriques. -->
+        <div class="cards">
+          <!-- Carte événement : modifier le titre, le descriptif et le lien pour la personnaliser. -->
+          <article class="card">
+            <h3>Concert de jazz</h3>
+            <p>Profitez d'une soirée exceptionnelle avec notre groupe de jazz.</p>
+            <aside class="info-card" aria-label="Tarif de l'événement">
+              <p class="info-card-label">Tarif</p>
+              <p><strong>30 €</strong></p>
+              <a class="button" href="evenement/Concert-de-jazz.html">En savoir plus</a>
+            </aside>
+          </article>
+          <!-- Carte événement : modifier le titre, le descriptif et le lien pour la personnaliser. -->
+          <article class="card">
+            <h3>Canin et cocktail</h3>
+            <p>Rejoignez-nous pour une soirée dédiée aux chiens et aux amateurs de cocktails.</p>
+            <aside class="info-card" aria-label="Tarif de l'événement">
+              <p class="info-card-label">Tarif d'entrée</p>
+              <p><strong>5 €</strong></p>
+              <a class="button" href="evenement/Canin-et-cocktail.html">En savoir plus</a>
+            </aside>
+          </article>
+          <!-- Carte événement : modifier le titre, le descriptif et le lien pour la personnaliser. -->
+          <article class="card">
+            <h3>Soirée cinéma Marvel</h3>
+            <p>Plongez dans l'univers Marvel avec nos projections spéciales.</p>
+            <aside class="info-card" aria-label="Tarif de l'événement">
+              <p class="info-card-label">Tarif</p>
+              <p><strong>20 €</strong></p>
+              <a class="button" href="evenement/Cinéma.html">En savoir plus</a>
+            </aside>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coordonnées et bouton ouvrant un nouveau courriel à l'adresse indiquée. -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact">
+          <h2>CONTACT!!!!!</h2>
+          <p>Veuillez nous contacter pour toute question par mail</p>
+          <a class="button" href="mailto:ramoedo@guardiaschool.fr">Envoyer un e-mail</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page : nom du site et mention complémentaire. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <!-- L'année est remplie automatiquement par le script ci-dessous. -->
+      <p>© <span id="annee"></span> MonEvent</p>
+    </div>
+  </footer>
+
+  <script>
+    // Affiche l'année actuelle dans le pied de page.
+    document.getElementById("annee").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

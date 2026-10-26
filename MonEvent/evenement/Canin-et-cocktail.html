@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <!-- Paramètres de la page : encodage, affichage mobile, description, titre et feuille de style. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Découvrez la soirée Canin et cocktail proposée par MonEvent.">
+  <title>Canin et cocktail - MonEvent</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body style="--site-background-image: url('image/canin-cocktail.png')">
+  <!-- Fond personnalisable : chemin relatif au fichier style.css, dans le dossier image/. -->
+  <!-- En-tête commun : identité du site et accès aux pages principales. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html#accueil" aria-label="MonEvent, accueil">
+        <img src="../image/instagram.png" alt="Logo Instagram">
+        <span>MonEvent</span>
+      </a>
+      <!-- Navigation principale : retour à l'accueil ou à la liste complète. -->
+      <nav class="navigation" aria-label="Navigation principale">
+        <a href="../index.html">Accueil</a>
+        <a href="../Evenements.html" aria-current="page">Événements</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Contenu propre à cet événement. -->
+  <main>
+    <!-- Titre et présentation courte de l'événement. -->
+    <section class="event-page-heading container">
+      <p class="eyebrow">À découvrir</p>
+      <h1>Canin et cocktail</h1>
+      <p>Une soirée conviviale à partager avec les chiens et les amateurs de cocktails.</p>
+    </section>
+    <!-- Détails pratiques : description, date, lieu et tarif. -->
+    <section class="section event-section" aria-label="Informations sur l'événement">
+      <div class="container">
+        <!-- Fiche récapitulative de l'événement. -->
+        <article class="event-item">
+          <div class="event-number" aria-hidden="true">★</div>
+          <div class="event-details">
+            <h2>Une rencontre conviviale</h2>
+            <p>Rejoignez-nous pour une soirée dédiée aux chiens et aux amateurs de cocktails, dans une ambiance détendue et chaleureuse.</p>
+            <!-- Date et lieu restent à préciser tant qu'ils ne sont pas communiqués. -->
+            <p class="event-meta">Date : à préciser <span aria-hidden="true">·</span> Lieu : à préciser</p>
+            <!-- Encadré affichant le prix annoncé. -->
+            <aside class="info-card" aria-label="Tarif de l'événement">
+              <p class="info-card-label">Tarif d'entrée</p>
+              <p><strong>5 €</strong></p>
+            </aside>
+          </div>
+        </article>
+        <!-- Lien de retour à la liste des événements. -->
+        <a class="button" href="../Evenements.html">Retour aux événements</a>
+      </div>
+    </section>
+  </main>
+  <!-- Pied de page commun au site. -->
+  <footer class="site-footer">
+    <div class="container footer-inner"><p>© <span id="annee"></span> MonEvent</p></div>
+  </footer>
+  <!-- Met automatiquement l'année actuelle dans le pied de page. -->
+  <script>document.getElementById("annee").textContent = new Date().getFullYear();</script>
+</body>
+</html>
